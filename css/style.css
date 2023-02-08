@@ -1,7 +1,49 @@
 img {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 75px;
+    object-fit: cover;
 }
 *{
     font-size: 0.8rem;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#headerlogo {
+ font-size: 32px;
+}
+header {  
+    min-height: 10vh;
+    margin-bottom: 10px;
+}
+#upperparatext {
+    display: none;
+}
+
+main {
+    display: grid;
+ width: 80%;
+    min-height: 80vh;
+    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+}
+#meet_team {
+    justify-self: center;
+}
+#our_product {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+place-content: center;
+}
+footer{
+    display: grid;
+    min-height: 10vh;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 10px;
+    place-content: center;
+}
+button {
+    height: 3vh;
+    width: 6vh;
 }
