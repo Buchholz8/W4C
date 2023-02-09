@@ -24,26 +24,66 @@ header {
 
 main {
     display: grid;
- width: 80%;
+    width: 90%;
     min-height: 80vh;
-    grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
 }
 #meet_team {
     justify-self: center;
+display: grid;
+place-items: center;
 }
+
 #our_product {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-place-content: center;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+}
+.lower_img {
+    width: 75px;
+    height: 50px;
 }
 footer{
     display: grid;
     min-height: 10vh;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     margin-top: 10px;
     place-content: center;
 }
+nav {
+    place-self: center;
+}
 button {
-    height: 3vh;
-    width: 6vh;
+    height: 2vh;
+    width: 5vh;
+}
+@media screen and (min-width:720px) {
+    #upperparatext{
+        display: grid
+    }
+    *{
+        font-size: 1rem;
+    }
+    img {
+        width: 175px;
+        height: 175px;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    #our_product {
+        grid-template-columns: 1fr 1fr;
+    }
+    .lower_img {
+        width: 200px;
+        height: 200px;
+    }
+    *{
+        font-size: 1.2rem;
+    }
+    img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }
 }
